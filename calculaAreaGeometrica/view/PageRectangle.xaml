@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculaAreaGeometrica.view.PageRectangle">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Área do retangulo" />
+            <Label Text="Digite o valor da altura do retângulo!" />
+            <Entry x:Name="txt_h"
+                   Keyboard="Numeric"/>
+            <Label Text="Digite o valor da base do retângulo!" />
+            <Entry x:Name="txt_base"
+                   Keyboard="Numeric"/>
+            <Label x:Name="resultado"
+                   Text="Resultado"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   FontAttributes="Bold"/>
+            <Button Text="Calcular área" Clicked="btnAreaRet"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

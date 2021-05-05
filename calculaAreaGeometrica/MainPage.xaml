@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Calcula area"
+             x:Class="calculaAreaGeometrica.MainPage">
+    <ContentPage.Resources>
+        <Style x:Key="botaoIni" TargetType="Button">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="#5030ff"/>
+            <Setter Property="VerticalOptions" Value="StartAndExpand"/>
+        </Style>
+        
+    </ContentPage.Resources>
+
+    <!-- <ContentPage.Content>
+        <StackLayout Padding="5"
+                     Orientation="Vertical"
+                     BackgroundColor="#5030ff">
+            <Label Text="Selecione tela com menu ou sem menu"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                   TextColor="White"/>
+
+            <StackLayout BackgroundColor="Aqua"
+                         Padding="10">
+
+                <Button Style="{StaticResource botaoIni}" x:Name="pageBotoes" Text="Tela com botões" Clicked="BtnPageSemMenuAsync"/>
+                <Button Style="{StaticResource botaoIni}" x:Name="pageMenu" Text="Tela com menú" Clicked="BtnPageComMenu"/>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>-->
+    <ContentPage.Content>
+        <Grid BackgroundColor="LightGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                   Text="Calculadora de área geometrica"
+                   FontSize="50"
+                   TextColor="Black"/>
+
+            <ImageButton Grid.Row="1" Grid.Column="0" Source="quad.jpg" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="BtnSquare" />
+            <ImageButton Grid.Row="1" Grid.Column="1" Source="circle.jpg" Clicked="BtnCircle"/>
+            <ImageButton Grid.Row="2" Grid.Column="0" Source="retangulo.jpg" Clicked="BtnRectangle"/>
+            <ImageButton Grid.Row="2" Grid.Column="1" Source="triangulo.jpg" Clicked="BtnTriagle"/>
+            <ImageButton Grid.Row="3" Grid.Column="0" Source="losango.jpg" Clicked="BtnLosango"/>
+            <ImageButton Grid.Row="3" Grid.Column="1" Source="trapezio.png" Clicked="BtnTrapezio"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+

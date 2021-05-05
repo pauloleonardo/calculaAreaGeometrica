@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculaAreaGeometrica.view.PageCircle">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Área do círculo" />
+            <Label Text="Digite o valor do raio do círculo!" />
+            <Entry x:Name="txt_raio"
+                   Keyboard="Numeric"/>
+            <Label x:Name="resultado"
+                   Text="Resultado"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   FontAttributes="Bold"/>
+            <Button Text="Calcular área" Clicked="btnAreaCircle"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
