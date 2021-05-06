@@ -23,7 +23,7 @@ namespace calculaAreaGeometrica.view
             double h = Double.Parse(txt_altura.Text);
             double area = ((bMenor + bMaior) * h) / 2;
 
-            resultado.Text = "A área do quadrado é: " + area.ToString(("0.00"));
+            resultado.Text = "A área do trapézio é: " + area.ToString(("0.00"));
             resultado.TextColor = Color.DarkOrange;
             resultado.HorizontalTextAlignment = TextAlignment.Center;
         }
