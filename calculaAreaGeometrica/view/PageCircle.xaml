@@ -2,18 +2,44 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="calculaAreaGeometrica.view.PageCircle">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="estiloLabel" TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="TextColor" Value="Orange"/>
+            </Style>
+            <Style x:Key="btn" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="DarkOrange"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+            <Style x:Key="entForm" TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="Gray"/>
+                <Setter Property="TextColor" Value="Orange"/>
+                <Setter Property="Keyboard" Value="Numeric"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Área do círculo" />
-            <Label Text="Digite o valor do raio do círculo!" />
+        <StackLayout BackgroundColor="#111">
+            <Label Text="Área do círculo" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FontSize="30"
+                   Padding="20"
+                   TextColor="DarkOrange"/>
+            <Label Text="Digite o valor do raio do círculo"
+                   Style="{StaticResource estiloLabel}"/>
             <Entry x:Name="txt_raio"
-                   Keyboard="Numeric"/>
+                   Placeholder="Digite aqui o raio do círculo"
+                   Style="{StaticResource entForm}"/>
             <Label x:Name="resultado"
                    Text="Resultado"
                    HorizontalOptions="Center"
                    FontSize="Large"
                    FontAttributes="Bold"/>
-            <Button Text="Calcular área" Clicked="btnAreaCircle"/>
+            <Button Text="Calcular área" Style="{StaticResource btn}" Clicked="btnAreaCircle"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

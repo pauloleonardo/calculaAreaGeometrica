@@ -11662,7 +11662,7 @@ namespace calculaAreaGeometrica.Droid
 			public const int btn_radio_on_to_off_mtrl_animation = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int circle = 2131165286;
+			public const int circuloLaranja = 2131165286;
 			
 			// aapt resource value: 0x7F070067
 			public const int design_bottom_navigation_item_background = 2131165287;
@@ -11695,7 +11695,7 @@ namespace calculaAreaGeometrica.Droid
 			public const int ic_mtrl_chip_close_circle = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int losango = 2131165297;
+			public const int losangoLaranja = 2131165297;
 			
 			// aapt resource value: 0x7F070072
 			public const int material_ic_calendar_black_24dp = 2131165298;
@@ -11785,10 +11785,10 @@ namespace calculaAreaGeometrica.Droid
 			public const int notify_panel_notification_icon_bg = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int quad = 2131165327;
+			public const int quadradoLaranja = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int retangulo = 2131165328;
+			public const int retanguloLaranja = 2131165328;
 			
 			// aapt resource value: 0x7F070091
 			public const int test_custom_background = 2131165329;
@@ -11800,10 +11800,10 @@ namespace calculaAreaGeometrica.Droid
 			public const int tooltip_frame_light = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int trapezio = 2131165332;
+			public const int trapezioLaranja = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int triangulo = 2131165333;
+			public const int trianguloLaranja = 2131165333;
 			
 			static Drawable()
 			{

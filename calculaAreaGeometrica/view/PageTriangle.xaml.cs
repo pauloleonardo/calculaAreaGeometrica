@@ -56,7 +56,7 @@ namespace calculaAreaGeometrica.view
             }*/
 
             resultado.Text = "A área do triângulo é: " + area.ToString(("0.00"));
-            resultado.TextColor = Color.Black;
+            resultado.TextColor = Color.DarkOrange;
             resultado.HorizontalTextAlignment = TextAlignment.Center;
         }
     }

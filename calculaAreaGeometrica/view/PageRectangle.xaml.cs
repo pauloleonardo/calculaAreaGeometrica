@@ -23,7 +23,7 @@ namespace calculaAreaGeometrica.view
             double area = baseRet * altura;
 
             resultado.Text = "A área do retângulo é: " + area.ToString(("0.00"));
-            resultado.TextColor = Color.Black;
+            resultado.TextColor = Color.DarkOrange;
             resultado.HorizontalTextAlignment = TextAlignment.Center;
         }
     }

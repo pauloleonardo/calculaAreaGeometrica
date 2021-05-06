@@ -34,7 +34,7 @@
         </StackLayout>
     </ContentPage.Content>-->
     <ContentPage.Content>
-        <Grid BackgroundColor="LightGray">
+        <Grid BackgroundColor="#111">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -49,15 +49,17 @@
 
             <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
                    Text="Calculadora de área geometrica"
-                   FontSize="50"
-                   TextColor="Black"/>
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FontSize="30"
+                   TextColor="DarkOrange"/>
 
-            <ImageButton Grid.Row="1" Grid.Column="0" Source="quad.jpg" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="BtnSquare" />
-            <ImageButton Grid.Row="1" Grid.Column="1" Source="circle.jpg" Clicked="BtnCircle"/>
-            <ImageButton Grid.Row="2" Grid.Column="0" Source="retangulo.jpg" Clicked="BtnRectangle"/>
-            <ImageButton Grid.Row="2" Grid.Column="1" Source="triangulo.jpg" Clicked="BtnTriagle"/>
-            <ImageButton Grid.Row="3" Grid.Column="0" Source="losango.jpg" Clicked="BtnLosango"/>
-            <ImageButton Grid.Row="3" Grid.Column="1" Source="trapezio.png" Clicked="BtnTrapezio"/>
+            <ImageButton Grid.Row="1" Grid.Column="0" Source="quadradoLaranja.jpg" BackgroundColor="Black" CornerRadius="10" Clicked="BtnSquare" />
+            <ImageButton Grid.Row="1" Grid.Column="1" Source="circuloLaranja.jpg" BackgroundColor="Black" CornerRadius="10" Clicked="BtnCircle"/>
+            <ImageButton Grid.Row="2" Grid.Column="0" Source="retanguloLaranja.jpg" BackgroundColor="Black" CornerRadius="10" Clicked="BtnRectangle"/>
+            <ImageButton Grid.Row="2" Grid.Column="1" Source="trianguloLaranja.jpg" BackgroundColor="Black" CornerRadius="10" Clicked="BtnTriagle"/>
+            <ImageButton Grid.Row="3" Grid.Column="0" Source="losangoLaranja.jpg" BackgroundColor="Black" CornerRadius="10" Clicked="BtnLosango"/>
+            <ImageButton Grid.Row="3" Grid.Column="1" Source="trapezioLaranja.jpg" BackgroundColor="Black" CornerRadius="10" Clicked="BtnTrapezio"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

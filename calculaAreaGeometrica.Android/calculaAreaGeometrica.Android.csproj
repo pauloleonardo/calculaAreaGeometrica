@@ -90,22 +90,22 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\quad.jpg" />
+    <AndroidResource Include="Resources\drawable\retanguloLaranja.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\retangulo.jpg" />
+    <AndroidResource Include="Resources\drawable\trapezioLaranja.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\circle.jpg" />
+    <AndroidResource Include="Resources\drawable\trianguloLaranja.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\triangulo.jpg" />
+    <AndroidResource Include="Resources\drawable\circuloLaranja.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\losango.jpg" />
+    <AndroidResource Include="Resources\drawable\losangoLaranja.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\trapezio.png" />
+    <AndroidResource Include="Resources\drawable\quadradoLaranja.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

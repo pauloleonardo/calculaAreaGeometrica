@@ -21,7 +21,7 @@ namespace calculaAreaGeometrica.view
             double area = 3.14159265358 * raio * raio;
 
             resultado.Text = "A área do círculo é: " + area.ToString(("0.00"));
-            resultado.TextColor = Color.Black;
+            resultado.TextColor = Color.DarkOrange;
             resultado.HorizontalTextAlignment = TextAlignment.Center;
         }
     }

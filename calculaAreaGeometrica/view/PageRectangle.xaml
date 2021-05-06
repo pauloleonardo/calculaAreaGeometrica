@@ -2,21 +2,50 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="calculaAreaGeometrica.view.PageRectangle">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="estiloLabel" TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="TextColor" Value="Orange"/>
+            </Style>
+            <Style x:Key="btn" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="DarkOrange"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+            <Style x:Key="entForm" TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="Gray"/>
+                <Setter Property="TextColor" Value="Orange"/>
+                <Setter Property="Keyboard" Value="Numeric"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Área do retangulo" />
-            <Label Text="Digite o valor da altura do retângulo!" />
+        
+        <StackLayout BackgroundColor="#111">
+            <Label Text="Área do retângulo"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   Padding="20"
+                   FontSize="30"
+                   TextColor="DarkOrange"/>
+            <Label Text="Digite o valor da altura do retângulo!"
+                   Style="{StaticResource estiloLabel}"/>
             <Entry x:Name="txt_h"
-                   Keyboard="Numeric"/>
-            <Label Text="Digite o valor da base do retângulo!" />
+                   Placeholder="Digite aqui a altura do retângulo"
+                   Style="{StaticResource entForm}"/>
+            <Label Text="Digite o valor da base do retângulo!"
+                   Style="{StaticResource estiloLabel}"/>
             <Entry x:Name="txt_base"
-                   Keyboard="Numeric"/>
+                   Placeholder="Digite aqui a base do retângulo"
+                   Style="{StaticResource entForm}"/>
             <Label x:Name="resultado"
                    Text="Resultado"
                    HorizontalOptions="Center"
                    FontSize="Large"
                    FontAttributes="Bold"/>
-            <Button Text="Calcular área" Clicked="btnAreaRet"/>
+            <Button Text="Calcular área" Style="{StaticResource btn}" Clicked="btnAreaRet"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
